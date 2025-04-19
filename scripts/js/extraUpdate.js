@@ -1,33 +1,18 @@
-/**
- * Script to update the 'Extra' field of Anki notes based on data from a JSON file.
- *
- * Requirements:
- * 1. Node.js installed.
- * 2. `axios` library installed (`npm install axios` in the terminal in your project directory).
- * 3. Anki desktop application running.
- * 4. AnkiConnect add-on installed and enabled in Anki.
- * 5. An `output.json` file located at ../notes/output.json relative to this script,
- *    containing a JSON array of objects, where each object has a `noteId` (number)
- *    and an `Extra` (string) property.
- *
- * Example output.json structure:
- * [
- *   { "noteId": 1739605588100, "Extra": "HTML content for note 1..." },
- *   { "noteId": 1739605588101, "Extra": "HTML content for note 2..." }
- * ]
- */
-
+// scripts/js/extraUpdate.js
 const fs = require("fs");
 const axios = require("axios");
 const path = require("path");
 
 // --- Configuration ---
 // Path to the JSON file containing note data
-const DATA_FILE_PATH = path.join(__dirname, "../notes/output.json");
+// Corrected: Go up two levels from __dirname (js -> scripts -> project root) then into notes
+const DATA_FILE_PATH = path.join(__dirname, "../../notes/output.json");
 // URL for the AnkiConnect API (default)
 const ANKI_CONNECT_URL = "http://localhost:8765";
-// Name of the field in Anki to update (case-sensitive)
-const TARGET_FIELD_NAME = "Extra";
+// Name of the field *in Anki* to update (case-sensitive)
+const ANKI_TARGET_FIELD_NAME = "Extra";
+// Name of the field *in the JSON file* that contains the new content (case-sensitive)
+const JSON_SOURCE_FIELD_NAME = "modifiedExtra";
 // Optional: Add a small delay (in milliseconds) between update requests
 // Set to 0 to disable delay. Helps prevent overwhelming AnkiConnect if you have many notes.
 const REQUEST_DELAY_MS = 50;
@@ -42,6 +27,11 @@ function loadNotesData() {
     console.log(`Attempting to read data from: ${DATA_FILE_PATH}`);
     if (!fs.existsSync(DATA_FILE_PATH)) {
       console.error(`Error: File not found at ${DATA_FILE_PATH}`);
+      // Add more context for debugging path issues
+      console.error(`Current script directory (__dirname): ${__dirname}`);
+      console.error(
+        `Please ensure the 'notes' directory exists at the project root (parallel to 'scripts') and contains 'output.json'.`
+      );
       return null;
     }
 
@@ -76,11 +66,11 @@ function loadNotesData() {
 /**
  * Updates a specific field of a single Anki note using AnkiConnect.
  * @param {number} noteId - The ID of the Anki note to update.
- * @param {string} fieldName - The exact name of the field to update.
+ * @param {string} fieldNameInAnki - The exact name of the field *in Anki* to update.
  * @param {string} content - The new content for the field.
  * @returns {Promise<boolean>} - True if the update was successful according to AnkiConnect, false otherwise.
  */
-async function updateAnkiNoteField(noteId, fieldName, content) {
+async function updateAnkiNoteField(noteId, fieldNameInAnki, content) {
   const payload = {
     action: "updateNoteFields",
     version: 6,
@@ -88,14 +78,14 @@ async function updateAnkiNoteField(noteId, fieldName, content) {
       note: {
         id: noteId,
         fields: {
-          [fieldName]: content, // Use computed property name to set the target field
+          [fieldNameInAnki]: content, // Use computed property name to set the target field in Anki
         },
       },
     },
   };
 
   try {
-    // console.log(`Attempting to update Note ID: ${noteId}, Field: ${fieldName}`); // More verbose logging if needed
+    // console.log(`Attempting to update Note ID: ${noteId}, Field: ${fieldNameInAnki}`); // More verbose logging if needed
     const response = await axios.post(ANKI_CONNECT_URL, payload, {
       timeout: 10000, // 10 second timeout per request
     });
@@ -109,7 +99,7 @@ async function updateAnkiNoteField(noteId, fieldName, content) {
     } else if (response.data && response.data.result === null) {
       // AnkiConnect signals success with result: null for this action
       console.log(
-        `Successfully updated Note ID: ${noteId} (Field: ${fieldName})`
+        `Successfully updated Note ID: ${noteId} (Field: ${fieldNameInAnki})`
       );
       return true;
     } else {
@@ -179,22 +169,26 @@ async function runUpdateProcess() {
   let successCount = 0;
   let errorCount = 0;
 
-  console.log(`\nProcessing ${notesToUpdate.length} notes...`);
+  console.log(
+    `\nProcessing ${notesToUpdate.length} notes (Source Field: '${JSON_SOURCE_FIELD_NAME}', Target Anki Field: '${ANKI_TARGET_FIELD_NAME}')...`
+  );
 
   for (let i = 0; i < notesToUpdate.length; i++) {
     const note = notesToUpdate[i];
-    const { noteId, [TARGET_FIELD_NAME]: content } = note; // Dynamically access the target field content
+    // Destructure using the JSON_SOURCE_FIELD_NAME to get the content
+    const { noteId, [JSON_SOURCE_FIELD_NAME]: content } = note;
 
     // Validate data for the current note
     if (
       typeof noteId !== "number" ||
       typeof content === "undefined" ||
-      content === null
+      content === null ||
+      typeof content !== "string" // Also check if content is a string
     ) {
       console.warn(
         `Skipping entry ${
           i + 1
-        }: Invalid or missing 'noteId' (${noteId}) or '${TARGET_FIELD_NAME}' content in: ${JSON.stringify(
+        }: Invalid or missing 'noteId' (${noteId}) or '${JSON_SOURCE_FIELD_NAME}' content (Type: ${typeof content}) in: ${JSON.stringify(
           note
         )}`
       );
@@ -202,11 +196,11 @@ async function runUpdateProcess() {
       continue; // Skip to the next note
     }
 
-    // Call the update function
+    // Call the update function, passing the target Anki field name
     const success = await updateAnkiNoteField(
       noteId,
-      TARGET_FIELD_NAME,
-      content
+      ANKI_TARGET_FIELD_NAME, // Tell Anki to update the "Extra" field
+      content // Use the content read from "modifiedExtra"
     );
     if (success) {
       successCount++;
