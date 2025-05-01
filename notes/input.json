@@ -1,377 +1,377 @@
 [
   {
-    "noteId": 1745003707392,
-    "TokenNo": "01-176-03-01",
-    "Question": "Choose the most appropriate ANTONYM for the underlined word in the given sentence.<br>The war was followed by a long period of <u>prosperity</u>.",
-    "OP1": "Security",
-    "OP2": "Secure",
-    "OP3": "Affluence",
-    "OP4": "Failure",
+    "noteId": 1745003401044,
+    "TokenNo": "01-178-04-01",
+    "Question": "Which of the following countries has the highest Hindu population after India?",
+    "OP1": "Bhutan",
+    "OP2": "Sri Lanka",
+    "OP3": "Myanmar",
+    "OP4": "Nepal",
     "Answer": "4",
     "Extra": "",
     "tags": [
-      "ENG::Antonym",
-      "Prelims::176"
+      "GK::Geography",
+      "Prelims::178"
     ]
   },
   {
-    "noteId": 1745003707393,
-    "TokenNo": "01-176-03-02",
-    "Question": "Select the option that can be used as a one-word substitute for the given phrase.<br>An important person who represents his/her country in a foreign country",
-    "OP1": "Amateur",
-    "OP2": "Ambassador",
-    "OP3": "Altruist",
-    "OP4": "Anonymous",
-    "Answer": "2",
-    "Extra": "",
-    "tags": [
-      "ENG::One-Word-Substitution",
-      "Prelims::176"
-    ]
-  },
-  {
-    "noteId": 1745003707394,
-    "TokenNo": "01-176-03-03",
-    "Question": "Select the option that expresses the given sentence in passive voice.<br>Martha made pancakes yesterday.",
-    "OP1": "Pancakes had been made by Martha yesterday.",
-    "OP2": "Pancakes were being made by Martha yesterday.",
-    "OP3": "Pancakes were made by Martha yesterday.",
-    "OP4": "Pancakes was made by Martha yesterday.",
+    "noteId": 1745003401045,
+    "TokenNo": "01-178-04-02",
+    "Question": "Which of the following statements about the aims of National Mission for Sustainable Agriculture (NMSA) of India is/are correct?<br>1. To make agriculture more productive.<br>2. To make agriculture more sustainable.<br>3. To promote organic farming.",
+    "OP1": "Only 1 is correct.",
+    "OP2": "Only 2 and 3 are correct.",
+    "OP3": "1, 2 and 3 are correct.",
+    "OP4": "Only 1 and 2 are correct.",
     "Answer": "3",
     "Extra": "",
     "tags": [
-      "ENG::Voice-Change",
-      "Prelims::176"
+      "GK::Polity",
+      "Prelims::178"
     ]
   },
   {
-    "noteId": 1745003707395,
-    "TokenNo": "01-176-03-04",
-    "Question": "In the given question, a statement divided into different segments is given. Rearrange all the segments to form a coherent<br>statement.<br>O: also benefit from knowing<br>P: there are several reasons<br>Q: why even parents would<br>R: more about how and why<br>S: children do the things that they do",
-    "OP1": "RQOPS",
-    "OP2": "OPQSR",
-    "OP3": "PQORS",
-    "OP4": "PQROS",
-    "Answer": "3",
-    "Extra": "",
-    "tags": [
-      "ENG::Parajumble",
-      "Prelims::176"
-    ]
-  },
-  {
-    "noteId": 1745003707396,
-    "TokenNo": "01-176-03-05",
-    "Question": "Select the most appropriate meaning of the given idiom.<br>Radhika stood by Monica's side <u>through thick and thin</u>.",
-    "OP1": "Under easy situations wherein she could ensure Monica's safety and security",
-    "OP2": "In all the happy moments, personally spending most of her time",
-    "OP3": "Under all conditions, no matter how challenging or difficult",
-    "OP4": "In the moments when Monica couldn't complete some simple tasks",
-    "Answer": "3",
-    "Extra": "",
-    "tags": [
-      "ENG::Idioms",
-      "Prelims::176"
-    ]
-  },
-  {
-    "noteId": 1745003707397,
-    "TokenNo": "01-176-03-06",
-    "Question": "Give one word substitution for :<br>A person who is unsure about God’s existence",
-    "OP1": "Ignorant",
-    "OP2": "Atheist",
-    "OP3": "Agnostic",
-    "OP4": "Theist",
-    "Answer": "3",
-    "Extra": "",
-    "tags": [
-      "ENG::One-Word-Substitution",
-      "Prelims::176"
-    ]
-  },
-  {
-    "noteId": 1745003707398,
-    "TokenNo": "01-176-03-07",
-    "Question": "Select the most appropriate synonym of the underlined word in the given sentence.<br>His approach was filled with such <u>perseverance</u> that it was difficult to overlook his merit.",
-    "OP1": "Ignorance",
-    "OP2": "Doggedness",
-    "OP3": "Reluctance",
-    "OP4": "Monotonous",
-    "Answer": "2",
-    "Extra": "",
-    "tags": [
-      "ENG::Synonym",
-      "Prelims::176"
-    ]
-  },
-  {
-    "noteId": 1745003707399,
-    "TokenNo": "01-176-03-08",
-    "Question": "Select the most appropriate option that can substitute the underlined part in the following sentence.<br>Everyone called the reporter <u>a daredevil</u> after he came back safely from the war zone.",
-    "OP1": "a common man",
-    "OP2": "a fearless person",
-    "OP3": "an insignificant person",
-    "OP4": "a hypocrite",
-    "Answer": "2",
-    "Extra": "",
-    "tags": [
-      "ENG::One-Word-Substitution",
-      "Prelims::176"
-    ]
-  },
-  {
-    "noteId": 1745003707400,
-    "TokenNo": "01-176-03-09",
-    "Question": "Parts of the given sentence have been underlined. Identify the part that has an error. Select 'No error' if there is no error.<br>Although the team had <u>trained diligently for months</u>, they <u>had still overwhelmed</u> by the opponent's unexpected tactics.",
-    "OP1": "No error",
-    "OP2": "had still overwhelmed",
-    "OP3": "trained diligently",
-    "OP4": "for months",
-    "Answer": "2",
-    "Extra": "",
-    "tags": [
-      "ENG::Spot-Error",
-      "Prelims::176"
-    ]
-  },
-  {
-    "noteId": 1745003707401,
-    "TokenNo": "01-176-03-10",
-    "Question": "Select the most appropriate ANTONYM of the underlined word.<br>If someone <u>babbles</u>, it means that they talk in a confused or excited way.",
-    "OP1": "Gossips",
-    "OP2": "Quiet",
-    "OP3": "Talkative",
-    "OP4": "Rants",
-    "Answer": "2",
-    "Extra": "",
-    "tags": [
-      "ENG::Antonym",
-      "Prelims::176"
-    ]
-  },
-  {
-    "noteId": 1745003707402,
-    "TokenNo": "01-176-03-11",
-    "Question": "Select the most appropriate ANTONYM of the word in the brackets to fill in the blank.<br>Akash went to ______ his school uniform. [sell]",
-    "OP1": "loan",
-    "OP2": "rent",
-    "OP3": "buy",
-    "OP4": "make",
-    "Answer": "3",
-    "Extra": "",
-    "tags": [
-      "ENG::Fill-Blanks",
-      "Prelims::176"
-    ]
-  },
-  {
-    "noteId": 1745003707403,
-    "TokenNo": "01-176-03-12",
-    "Question": "Select the most appropriate option to substitute the underlined word segment in the given sentence.<br>Carnatic music is usually performed by <u>a small troupe of actors</u>, consisting of a principal performer, a melodic accompaniment, and a rhythm accompaniment.",
-    "OP1": "board of directors",
-    "OP2": "ensemble of musicians",
-    "OP3": "panel of judges",
-    "OP4": "band of singers",
-    "Answer": "2",
-    "Extra": "",
-    "tags": [
-      "ENG::One-Word-Substitution",
-      "Prelims::176"
-    ]
-  },
-  {
-    "noteId": 1745003707404,
-    "TokenNo": "01-176-03-13",
-    "Question": "Select the option that can be used as a one-word substitute for the given group of words.<br>One who speaks less in a forum.",
-    "OP1": "Eccentric",
-    "OP2": "Loquacious",
-    "OP3": "Gabby",
-    "OP4": "Reticent",
+    "noteId": 1745003401046,
+    "TokenNo": "01-178-04-03",
+    "Question": "Who among the following sports persons is designated as brand ambassador for Nikshay Mitra, an initiative under Pradhan Mantri TB Mukt Bharat Abhiyan by Ministry of Health and Family welfare of GOI in November 2022?",
+    "OP1": "Mary Kom",
+    "OP2": "Abhinav Bindra",
+    "OP3": "Pullela Gopichand",
+    "OP4": "Deepa Malik",
     "Answer": "4",
     "Extra": "",
     "tags": [
-      "ENG::One-Word-Substitution",
-      "Prelims::176"
+      "GK::Current-Affairs",
+      "Prelims::178"
     ]
   },
   {
-    "noteId": 1745003707405,
-    "TokenNo": "01-176-03-14",
-    "Question": "Parts of a sentence are given below in jumbled order. Select the option that gives their correct logical sequence and forms a meaningful sentence.<br>In November, Lakshman fell (P) / with fever (Q) / seriously ill (R) and pneumonia (S).",
-    "OP1": "P, Q, S, R",
-    "OP2": "P, R, Q, S",
-    "OP3": "P, Q, R, S",
-    "OP4": "R, Q, S, P",
+    "noteId": 1745003401047,
+    "TokenNo": "01-178-04-04",
+    "Question": "What is subtracted from GDP to arrive at NDP?",
+    "OP1": "Subsidies",
+    "OP2": "Depreciation",
+    "OP3": "Net indirect taxes",
+    "OP4": "Net factor income from abroad",
     "Answer": "2",
     "Extra": "",
     "tags": [
-      "ENG::Parajumble",
-      "Prelims::176"
+      "GK::Economics",
+      "Prelims::178"
     ]
   },
   {
-    "noteId": 1745003707406,
-    "TokenNo": "01-176-03-15",
-    "Question": "In the following sentence, four words are underlined out of which one word is misspelt. Identify the INCORRECTLY spelt word.<br>I felt <u>absolutely</u> (A) fit at the summit. My mind was absolutely <u>clear</u>.(B) I didn’t feel tired, I felt <u>exhilerated</u>. (C)It was a very clear <u>sensation</u>.(D)",
-    "OP1": "C",
-    "OP2": "D",
-    "OP3": "B",
-    "OP4": "A",
+    "noteId": 1745003401048,
+    "TokenNo": "01-178-04-05",
+    "Question": "Indira PP Bora is a Padma Shri Awardee 2020 for her contribution to which Indian classical dance?",
+    "OP1": "Sattriya",
+    "OP2": "Kathak",
+    "OP3": "Kuchipudi",
+    "OP4": "Bharatanatyam",
     "Answer": "1",
     "Extra": "",
     "tags": [
-      "ENG::Spelling-Check",
-      "Prelims::176"
+      "GK::Static",
+      "Prelims::178"
     ]
   },
   {
-    "noteId": 1745003707407,
-    "TokenNo": "01-176-03-16",
-    "Question": "The following sentence has been divided into five segments. The first segment has no error. Select the option that has the segment with the grammatical error.<br>Due to the pandemic, / the prices of / medicines increased / every day since / last December.",
-    "OP1": "every day since",
-    "OP2": "medicines increased",
-    "OP3": "last December.",
-    "OP4": "the prices of",
+    "noteId": 1745003401049,
+    "TokenNo": "01-178-04-06",
+    "Question": "ollow On is related to which of the following cricket formats?",
+    "OP1": "Only T20 matches",
+    "OP2": "Only Test Matches",
+    "OP3": "Only One Day matches",
+    "OP4": "Both test and One-day matches",
     "Answer": "2",
     "Extra": "",
     "tags": [
-      "ENG::Spot-Error",
-      "Prelims::176"
+      "GK::Current-Affairs",
+      "Prelims::178"
     ]
   },
   {
-    "noteId": 1745003707408,
-    "TokenNo": "01-176-03-17",
-    "Question": "Select the option that expresses the given sentence in active voice.<br>I will be gifted a fancy doll by them the next day.",
-    "OP1": "They gifted me a fancy doll yesterday.",
-    "OP2": "They are gifting me a fancy doll the next day.",
-    "OP3": "They gift me a fancy doll the previous day.",
-    "OP4": "They will gift me a fancy doll tomorrow.",
-    "Answer": "4",
+    "noteId": 1745003401050,
+    "TokenNo": "01-178-04-07",
+    "Question": "Which of the following is NOT a halogen gas?",
+    "OP1": "F",
+    "OP2": "He",
+    "OP3": "Cl",
+    "OP4": "Br",
+    "Answer": "2",
     "Extra": "",
     "tags": [
-      "ENG::Voice-Change",
-      "Prelims::176"
+      "GK::Science",
+      "Prelims::178"
     ]
   },
   {
-    "noteId": 1745003707409,
-    "TokenNo": "01-176-03-18",
-    "Question": "Select the most appropriate option that can rectify the incorrectly spelt word in the following sentence.<br>The government has ordered for the maintainance of the roads.",
-    "OP1": "maintenance",
-    "OP2": "maintainence",
-    "OP3": "maintainance",
-    "OP4": "maintenence",
-    "Answer": "1",
-    "Extra": "",
-    "tags": [
-      "ENG::Spelling-Check",
-      "Prelims::176"
-    ]
-  },
-  {
-    "noteId": 1745003707410,
-    "TokenNo": "01-176-03-19",
-    "Question": "Select the most appropriate meaning of the given word.<br>illiterate",
-    "OP1": "A person who cannot speak",
-    "OP2": "One who is well-educated",
-    "OP3": "A person who cannot read and write",
-    "OP4": "Highly rated thing",
+    "noteId": 1745003401051,
+    "TokenNo": "01-178-04-08",
+    "Question": "Which of the following articles from Directive Principles of state policy mentions about organization of Village Panchayats?",
+    "OP1": "Article 38",
+    "OP2": "Article 42",
+    "OP3": "Article 40",
+    "OP4": "Article 36",
     "Answer": "3",
     "Extra": "",
     "tags": [
-      "ENG::One-Word-Substitution",
-      "Prelims::176"
+      "GK::Polity",
+      "Prelims::178"
     ]
   },
   {
-    "noteId": 1745003707411,
-    "TokenNo": "01-176-03-20",
-    "Question": "Select the most appropriate ANTONYM of the given word.<br>Affirmative",
-    "OP1": "Sanction",
-    "OP2": "Negative",
-    "OP3": "Acquiescence",
-    "OP4": "Accession",
+    "noteId": 1745003401052,
+    "TokenNo": "01-178-04-09",
+    "Question": "Who among the following is a Sarod player popularly known as 'Sarod Samrat'?",
+    "OP1": "Pandit Kishan Maharaj",
+    "OP2": "Pandit Ravi Shankar",
+    "OP3": "Ustad Amjad Ali Khan Bangash",
+    "OP4": "Pandit Shivkumar Sharma",
+    "Answer": "3",
+    "Extra": "",
+    "tags": [
+      "GK::Static",
+      "Prelims::178"
+    ]
+  },
+  {
+    "noteId": 1745003401053,
+    "TokenNo": "01-178-04-10",
+    "Question": "Who among the following rulers built five astronomical observatories at different places in north India?",
+    "OP1": "Sawai Mansingh",
+    "OP2": "Maharana Pratap",
+    "OP3": "Sawai Jaisingh II",
+    "OP4": "Madho Singh",
+    "Answer": "3",
+    "Extra": "",
+    "tags": [
+      "GK::History",
+      "Prelims::178"
+    ]
+  },
+  {
+    "noteId": 1745003401054,
+    "TokenNo": "01-178-04-11",
+    "Question": "Which of the following festivals is celebrated in Madhya Pradesh?",
+    "OP1": "Thaipusam Festival",
+    "OP2": "Jaisalmer Desert Festival",
+    "OP3": "Bihu Festival",
+    "OP4": "Khajuraho Dance Festival",
+    "Answer": "4",
+    "Extra": "",
+    "tags": [
+      "GK::Static",
+      "Prelims::178"
+    ]
+  },
+  {
+    "noteId": 1745003401055,
+    "TokenNo": "01-178-04-12",
+    "Question": "Deimachus who was a Greek ambassador came to India during the reign of the Mauryan king, ________.",
+    "OP1": "Shatadhanvan",
+    "OP2": "Bindusara",
+    "OP3": "Ashoka",
+    "OP4": "Chandragupta Maurya",
     "Answer": "2",
     "Extra": "",
     "tags": [
-      "ENG::Antonym",
-      "Prelims::176"
+      "GK::History",
+      "Prelims::178"
     ]
   },
   {
-    "noteId": 1745003707412,
-    "TokenNo": "01-176-03-21",
-    "Question": "In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.<br>(1) ________ a letter came to inform them that Raka's mother Tara had another breakdown and was in a nursing home in Geneva and that Raka's grandmother Asha, (2) ________ seen another grandchild safely into the world, was flying to Switzerland to be with her, Nanda Kaul (3) ________ her lips, (4) ________ the blue sheets of paper with that distasteful sprawl (5) ________ them, and hid them in her desk.<br><em>Question:</em><br>Select the most appropriate option to fill in blank number 1.",
-    "OP1": "When",
-    "OP2": "Sooner",
-    "OP3": "For",
-    "OP4": "Unless",
+    "noteId": 1745003401056,
+    "TokenNo": "01-178-04-13",
+    "Question": "Which of the following does NOT belong to the category of Porifera?",
+    "OP1": "Hydra",
+    "OP2": "Sycon",
+    "OP3": "Spongilla",
+    "OP4": "Euplectella",
     "Answer": "1",
     "Extra": "",
     "tags": [
-      "ENG::Cloze-Test",
-      "Prelims::176"
+      "GK::Science",
+      "Prelims::178"
     ]
   },
   {
-    "noteId": 1745003707413,
-    "TokenNo": "01-176-03-22",
-    "Question": "In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.<br>(1) ________ a letter came to inform them that Raka's mother Tara had another breakdown and was in a nursing home in Geneva and that Raka's grandmother Asha, (2) ________ seen another grandchild safely into the world, was flying to Switzerland to be with her, Nanda Kaul (3) ________ her lips, (4) ________ the blue sheets of paper with that distasteful sprawl (5) ________ them, and hid them in her desk.<br><em>Question:</em><br>Select the most appropriate option to fill in blank number 2.",
-    "OP1": "have",
-    "OP2": "has",
-    "OP3": "had",
-    "OP4": "having",
+    "noteId": 1745003401057,
+    "TokenNo": "01-178-04-14",
+    "Question": "Which is a serious contagious bacterial infection that usually affects the mucous membranes of the nose and throat?",
+    "OP1": "Meningococcal",
+    "OP2": "Diphtheria",
+    "OP3": "Shigellosis",
+    "OP4": "Chlamydia",
+    "Answer": "2",
+    "Extra": "",
+    "tags": [
+      "GK::Science",
+      "Prelims::178"
+    ]
+  },
+  {
+    "noteId": 1745003401058,
+    "TokenNo": "01-178-04-15",
+    "Question": "The Maharashtra Bhushan was conferred upon ______________ in the year 2002.",
+    "OP1": "Pandit Ravi Shankar",
+    "OP2": "Pandit Bhimsen Joshi",
+    "OP3": "Pandit Jasraj",
+    "OP4": "Pandit Hari Prasad Chaurasia",
+    "Answer": "2",
+    "Extra": "",
+    "tags": [
+      "GK::Static",
+      "Prelims::178"
+    ]
+  },
+  {
+    "noteId": 1745003401059,
+    "TokenNo": "01-178-04-16",
+    "Question": "Which article of the Constitution of India lays down that it shall be the duty of the Advocate-General to give advice to the Government of the State upon legal matters?",
+    "OP1": "Article 168",
+    "OP2": "Article 165",
+    "OP3": "Article 167",
+    "OP4": "Article 166",
+    "Answer": "2",
+    "Extra": "",
+    "tags": [
+      "GK::Polity",
+      "Prelims::178"
+    ]
+  },
+  {
+    "noteId": 1745003401060,
+    "TokenNo": "01-178-04-17",
+    "Question": "What is the tenure of office for the Chief Election Commissioner?",
+    "OP1": "6 years or up to the age of 65 years",
+    "OP2": "5 years or up to the age of 65 years",
+    "OP3": "5 years or up to the age of 60 years",
+    "OP4": "6 years or up to the age of 60 years",
+    "Answer": "1",
+    "Extra": "",
+    "tags": [
+      "GK::Polity",
+      "Prelims::178"
+    ]
+  },
+  {
+    "noteId": 1745003401061,
+    "TokenNo": "01-178-04-18",
+    "Question": "What was a significant negative environmental impact of the Green Revolution?",
+    "OP1": "Deforestation",
+    "OP2": "Soil degradation",
+    "OP3": "Increase in air pollution",
+    "OP4": "Ozone layer depletion",
+    "Answer": "2",
+    "Extra": "",
+    "tags": [
+      "GK::Geography",
+      "Prelims::178"
+    ]
+  },
+  {
+    "noteId": 1745003401062,
+    "TokenNo": "01-178-04-19",
+    "Question": "Which of the following peninsular rivers falls into the Arabian Sea?",
+    "OP1": "Mahanadi river",
+    "OP2": "Krishna river",
+    "OP3": "Sabarmati river",
+    "OP4": "Godavari river",
+    "Answer": "3",
+    "Extra": "",
+    "tags": [
+      "GK::Geography",
+      "Prelims::178"
+    ]
+  },
+  {
+    "noteId": 1745003401063,
+    "TokenNo": "01-178-04-20",
+    "Question": "In the ancient temple of Mahadev at Mahabaleshwar, the spout emerging from the mouth of a cow statue is the source of which river basin?",
+    "OP1": "Kaveri",
+    "OP2": "Krishna",
+    "OP3": "Godavari",
+    "OP4": "Narmada",
+    "Answer": "2",
+    "Extra": "",
+    "tags": [
+      "GK::Geography",
+      "Prelims::178"
+    ]
+  },
+  {
+    "noteId": 1745003401064,
+    "TokenNo": "01-178-04-21",
+    "Question": "Which of the following animals was the emblem of the Chola dynasty?",
+    "OP1": "Wolf",
+    "OP2": "Horse",
+    "OP3": "Elephant",
+    "OP4": "Tiger",
     "Answer": "4",
     "Extra": "",
     "tags": [
-      "ENG::Cloze-Test",
-      "Prelims::176"
+      "GK::History",
+      "Prelims::178"
     ]
   },
   {
-    "noteId": 1745003707414,
-    "TokenNo": "01-176-03-23",
-    "Question": "In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.<br>(1) ________ a letter came to inform them that Raka's mother Tara had another breakdown and was in a nursing home in Geneva and that Raka's grandmother Asha, (2) ________ seen another grandchild safely into the world, was flying to Switzerland to be with her, Nanda Kaul (3) ________ her lips, (4) ________ the blue sheets of paper with that distasteful sprawl (5) ________ them, and hid them in her desk.<br><em>Question:</em><br>Select the most appropriate option to fill in blank number 3.",
-    "OP1": "stuck",
-    "OP2": "dirt",
-    "OP3": "dusted",
-    "OP4": "pursed",
-    "Answer": "4",
+    "noteId": 1745003401065,
+    "TokenNo": "01-178-04-22",
+    "Question": "Samata Sainik Dal was formed in 1927 by whom among the following personalities?",
+    "OP1": "Savitribai Phule",
+    "OP2": "BR Ambedkar",
+    "OP3": "Mahatma Gandhi",
+    "OP4": "Narayana Guru",
+    "Answer": "2",
     "Extra": "",
     "tags": [
-      "ENG::Cloze-Test",
-      "Prelims::176"
+      "GK::History",
+      "Prelims::178"
     ]
   },
   {
-    "noteId": 1745003707415,
-    "TokenNo": "01-176-03-24",
-    "Question": "In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.<br>(1) ________ a letter came to inform them that Raka's mother Tara had another breakdown and was in a nursing home in Geneva and that Raka's grandmother Asha, (2) ________ seen another grandchild safely into the world, was flying to Switzerland to be with her, Nanda Kaul (3) ________ her lips, (4) ________ the blue sheets of paper with that distasteful sprawl (5) ________ them, and hid them in her desk.<br><em>Question:</em><br>Select the most appropriate option to fill in blank number 4.",
-    "OP1": "folded up",
-    "OP2": "cleared up",
-    "OP3": "hid away",
-    "OP4": "tucked away",
+    "noteId": 1745003401066,
+    "TokenNo": "01-178-04-23",
+    "Question": "On 29th October 2020, the Ministry of Science and Technology launched the SERB-POWER Scheme. What is the objective of the scheme?",
+    "OP1": "To allow reservation for women in the Parliament and Judiciary",
+    "OP2": "To strengthen the solar programme of India with France",
+    "OP3": "To mitigate gender disparity in science and engineering research funding in various academic programmes and laboratories",
+    "OP4": "To allow reservation for women in the Ministry of Science and Technology",
+    "Answer": "3",
+    "Extra": "",
+    "tags": [
+      "GK::Polity",
+      "Prelims::178"
+    ]
+  },
+  {
+    "noteId": 1745003401067,
+    "TokenNo": "01-178-04-24",
+    "Question": "Which of the following was the mascot of the Khelo India University Games 2022?",
+    "OP1": "Bheema",
+    "OP2": "Moga",
+    "OP3": "Jitu",
+    "OP4": "Saavaj",
+    "Answer": "3",
+    "Extra": "",
+    "tags": [
+      "GK::Current-Affairs",
+      "Prelims::178"
+    ]
+  },
+  {
+    "noteId": 1745003401068,
+    "TokenNo": "01-178-04-25",
+    "Question": "The chemical formula of glucose is C6H12O6. The weight % of carbon in glucose is:",
+    "OP1": "40",
+    "OP2": "72",
+    "OP3": "53",
+    "OP4": "25",
     "Answer": "1",
     "Extra": "",
     "tags": [
-      "ENG::Cloze-Test",
-      "Prelims::176"
-    ]
-  },
-  {
-    "noteId": 1745003707416,
-    "TokenNo": "01-176-03-25",
-    "Question": "In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.<br>(1) ________ a letter came to inform them that Raka's mother Tara had another breakdown and was in a nursing home in Geneva and that Raka's grandmother Asha, (2) ________ seen another grandchild safely into the world, was flying to Switzerland to be with her, Nanda Kaul (3) ________ her lips, (4) ________ the blue sheets of paper with that distasteful sprawl (5) ________ them, and hid them in her desk.<br><em>Question:</em><br>Select the most appropriate option to fill in blank number 5.",
-    "OP1": "across",
-    "OP2": "at",
-    "OP3": "in",
-    "OP4": "by",
-    "Answer": "1",
-    "Extra": "",
-    "tags": [
-      "ENG::Cloze-Test",
-      "Prelims::176"
+      "GK::Science",
+      "Prelims::178"
     ]
   }
 ]
