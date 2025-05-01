@@ -1,175 +1,160 @@
-// scripts/tagUpdate.js
+const axios = require('axios');
+const fs = require('fs').promises;
+const path = require('path');
 
-// 1. Import necessary libraries
-const fs = require('fs').promises; // For reading files asynchronously
-const path = require('path');     // For handling file paths
-const axios = require('axios');   // For making HTTP requests to AnkiConnect
-
-// --- Configuration ---
-const ANKI_CONNECT_URL = 'http://localhost:8765';
-const INPUT_JSON_PATH = '../notes/output.json'; // Relative to this script file
-const TAG_TO_REPLACE = 'GI'; // The generic tag you want to replace on each note
-const ANKI_CONNECT_VERSION = 6;
-const DELAY_BETWEEN_NOTES_MS = 1000; // Delay in milliseconds (1000ms = 1 second)
-const INITIAL_DELAY_MS = 3000;       // Delay before starting (3000ms = 3 seconds)
-// --- ------------- ---
-
-// Resolve the absolute path to the JSON file using __dirname (available in CommonJS)
-const absoluteInputPath = path.resolve(__dirname, INPUT_JSON_PATH);
+const ankiConnectUrl = 'http://localhost:8765';
+const inputFile = path.join(__dirname, '..', 'notes', 'output.json');
+const INITIAL_DELAY_MS = 3000;
+const PER_REQUEST_DELAY_MS = 1000;
 
 /**
- * Helper function to introduce a delay.
- * @param {number} ms - Milliseconds to wait.
- * @returns {Promise<void>}
+ * Pauses execution for a specified duration without logging.
+ * @param {number} ms - The number of milliseconds to pause.
+ * @returns {Promise<void>} - A promise that resolves after the delay.
  */
 function sleep(ms) {
-  console.log(`Waiting for ${ms / 1000} second(s)...`);
+  // Removed logging from sleep function for cleaner output
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 /**
- * Sends a request to the AnkiConnect API using axios.
- * (This function remains the same as before)
- * @param {string} action - The AnkiConnect action name.
- * @param {object} params - The parameters for the action.
- * @returns {Promise<object>} - The result object from AnkiConnect.
- * @throws {Error} - If the request fails or AnkiConnect returns an error.
+ * Function to call AnkiConnect API (same as before)
  */
-async function invokeAnkiConnect(action, params) {
-    const requestPayload = {
-        action: action,
-        version: ANKI_CONNECT_VERSION,
-        params: params ?? {}
-    };
-
-    console.log(`Sending request: ${JSON.stringify(requestPayload)}`);
-
+async function ankiConnectRequest(action, params, version = 6) {
     try {
-        const response = await axios.post(ANKI_CONNECT_URL, requestPayload, {
-            headers: { 'Content-Type': 'application/json' }
-        });
-
-        const data = response.data;
-        console.log(`Received response: ${JSON.stringify(data)}`);
-
-        if (data.error) {
-            throw new Error(`AnkiConnect error: ${data.error}`);
+        const response = await axios.post(ankiConnectUrl, { action, version, params });
+        if (response.data.error) {
+            throw new Error(`AnkiConnect Error: ${response.data.error}`);
         }
-
-        return data.result;
-
+        return response.data.result;
     } catch (error) {
-        if (axios.isAxiosError(error)) {
-            if (error.code === 'ECONNREFUSED') {
-                 console.error(`\nError: Connection refused. Is Anki running with AnkiConnect installed and enabled?`);
-                 console.error(`Attempted to connect to: ${ANKI_CONNECT_URL}`);
-            } else if (error.response) {
-                console.error(`\nError: AnkiConnect request failed with status ${error.response.status}`);
-                console.error(`Response data:`, error.response.data);
-            } else if (error.request) {
-                console.error(`\nError: No response received from AnkiConnect at ${ANKI_CONNECT_URL}. Check Anki and AnkiConnect.`);
-            } else {
-                console.error('\nError during Axios request setup:', error.message);
+        let errorMessage = `Error during AnkiConnect request (${action}): `;
+        if (error.response) {
+            errorMessage += `Server responded with ${error.response.status} ${error.response.statusText}. `;
+            if (error.response.data && error.response.data.error) {
+                errorMessage += `AnkiConnect message: ${error.response.data.error}`;
+            } else if (typeof error.response.data === 'string') {
+                 errorMessage += `Response body: ${error.response.data.substring(0, 100)}...`; // Shorter preview
             }
+        } else if (error.request) {
+            errorMessage += 'No response received from AnkiConnect. Is Anki running with AnkiConnect installed and enabled?';
+        } else if (error.message.startsWith('AnkiConnect Error:')) {
+             errorMessage = error.message;
         } else {
-             console.error(`\nError during AnkiConnect processing for action "${action}":`, error.message);
+            errorMessage += error.message;
         }
-       throw error;
+        // Log error here directly if needed for debugging, but the main loop will handle user-facing output
+        // console.error("Detailed Error:", errorMessage, error.config ? { url: error.config.url, data: error.config.data } : '');
+        throw new Error(errorMessage); // Re-throw simplified message
     }
 }
+
 
 /**
- * Main function to read JSON and update Anki tags with delays.
+ * Main function to process notes and update tags
  */
-async function updateTags() {
-    let notesData;
+async function processNoteTags() {
+    let noteData;
 
-    // 1. Read and Parse JSON
+    // 1. Read the input JSON file
     try {
-        console.log(`Reading notes data from: ${absoluteInputPath}`);
-        const fileContent = await fs.readFile(absoluteInputPath, 'utf-8');
-        notesData = JSON.parse(fileContent);
-        console.log(`Successfully read and parsed ${notesData.length} notes from JSON.`);
+        console.log(`Reading note data from ${inputFile}...`);
+        const fileContent = await fs.readFile(inputFile, 'utf-8');
+        noteData = JSON.parse(fileContent);
+        console.log(`Successfully read ${noteData.length} note entries.`);
     } catch (error) {
-        console.error(`Error reading or parsing JSON file at ${absoluteInputPath}:`, error);
+        console.error(`Error reading or parsing ${inputFile}: ${error.message}`);
+        if (error.code === 'ENOENT') {
+            console.error("Ensure the file exists at the specified path.");
+        }
         return;
     }
 
-    if (!Array.isArray(notesData) || notesData.length === 0) {
-        console.log("No notes found in the JSON file or data is not an array. Exiting.");
-        return;
+     if (!Array.isArray(noteData) || noteData.length === 0) {
+         console.error(`Error: Expected ${inputFile} to contain a non-empty JSON array.`);
+         return;
     }
 
-    // 2. Initial Delay before starting
-    console.log(`\nStarting tag update process in ${INITIAL_DELAY_MS / 1000} seconds...`);
+    // --- Initial Delay ---
+    console.log(`\nPausing for ${INITIAL_DELAY_MS / 1000} seconds before starting updates...`);
     await sleep(INITIAL_DELAY_MS);
 
-    // 3. Iterate and Update Tags
     let successCount = 0;
     let errorCount = 0;
-    let currentNoteIndex = 0;
-    const totalNotes = notesData.length;
+    let processedCount = 0;
+    const totalNotes = noteData.length;
 
-    console.log(`\nStarting tag replacement for ${totalNotes} notes...`);
-    console.log(`Replacing tag "${TAG_TO_REPLACE}" with specific sub-topic tags.`);
-    console.log(`Delay between notes: ${DELAY_BETWEEN_NOTES_MS / 1000} second(s).`);
+    console.log("\nStarting note tag replacements...");
+    // 2. Process each note entry
+    for (const noteInfo of noteData) {
+        processedCount++;
+        const progressPrefix = `[${processedCount}/${totalNotes}]`; // Generate prefix like [1/25]
 
-    for (const noteInfo of notesData) {
-        currentNoteIndex++;
-        console.log(`\n[${currentNoteIndex}/${totalNotes}] Processing Note ID: ${noteInfo.noteId}`);
+        const { noteId, chosenTag } = noteInfo;
 
-        if (!noteInfo.noteId || !noteInfo.chosenTag) {
-            console.warn(`  Skipping invalid entry: ${JSON.stringify(noteInfo)} (missing noteId or chosenTag)`);
+        // --- Input Validation ---
+        if (typeof noteId !== 'number' || typeof chosenTag !== 'string') {
+            console.log(`${progressPrefix} ⚠️ Skipping invalid entry: ID=${noteId}, Tag=${chosenTag}`);
             errorCount++;
-            // Add delay even if skipped to maintain consistent timing
-            await sleep(DELAY_BETWEEN_NOTES_MS);
-            continue; // Move to the next note in the loop
+            if (processedCount < totalNotes) { await sleep(PER_REQUEST_DELAY_MS); }
+            continue;
         }
 
-        const noteId = noteInfo.noteId;
-        const replaceWithTag = noteInfo.chosenTag;
+        // --- Tag Format Validation & Extraction ---
+        const tagParts = chosenTag.split('::');
+        if (tagParts.length < 1 || !tagParts[0]) {
+             console.log(`${progressPrefix} ⚠️ Skipping Note ID ${noteId}: chosenTag "${chosenTag}" has no first part.`);
+              errorCount++;
+              if (processedCount < totalNotes) { await sleep(PER_REQUEST_DELAY_MS); }
+              continue;
+        }
+         if (tagParts.length !== 2 || !tagParts[1]) {
+             // Log only if format is unexpected, but proceed
+             console.log(`${progressPrefix} ℹ️ Note ID ${noteId}: Tag "${chosenTag}" not 'Subject::Topic' format. Using "${tagParts[0]}" as tag to replace.`);
+        }
+
+        const tagToReplace = tagParts[0];
+        const replaceWithTag = chosenTag; // This is the tag we want to see in the success message
+
+        // --- Prepare and Execute AnkiConnect Request ---
+        const params = {
+            notes: [noteId],
+            tag_to_replace: tagToReplace,
+            replace_with_tag: replaceWithTag
+        };
 
         try {
-            console.log(`  Replacing tag "${TAG_TO_REPLACE}" with "${replaceWithTag}"`);
-
-            const params = {
-                notes: [noteId],
-                tag_to_replace: TAG_TO_REPLACE,
-                replace_with_tag: replaceWithTag
-            };
-
-            const result = await invokeAnkiConnect('replaceTags', params);
+            const result = await ankiConnectRequest('replaceTags', params);
 
             if (result === null) {
-                console.log(`  Successfully updated tags for Note ID: ${noteId}`);
+                // --- SUCCESS LOGGING (Desired Format) ---
+                console.log(`${progressPrefix} ✅ noteid: ${noteId} is updated with "${replaceWithTag}"`);
                 successCount++;
             } else {
-                console.warn(`  Received unexpected non-null result for Note ID ${noteId}: ${JSON.stringify(result)}`);
-                successCount++; // Still treat as success if no error was thrown
+                 // --- UNEXPECTED RESULT LOGGING ---
+                 console.log(`${progressPrefix} ⚠️ noteid: ${noteId} - AnkiConnect returned unexpected result: ${JSON.stringify(result)}`);
+                 errorCount++;
             }
-
         } catch (error) {
-            console.error(`  Failed to update tags for Note ID: ${noteId}. See error above.`);
+             // --- ERROR LOGGING (Concise Format) ---
+             console.log(`${progressPrefix} ❌ noteid: ${noteId} - Failed replace "${tagToReplace}" with "${replaceWithTag}". Error: ${error.message}`);
             errorCount++;
-            // Optional: Decide if you want to stop the whole script on the first error
-            // return;
         }
 
-        // 4. Delay BETWEEN notes (if it's not the very last note)
-        if (currentNoteIndex < totalNotes) {
-            await sleep(DELAY_BETWEEN_NOTES_MS);
+        // --- Per-Request Delay ---
+        if (processedCount < totalNotes) {
+            await sleep(PER_REQUEST_DELAY_MS);
         }
-    }
 
-    // 5. Final Summary
-    console.log("\n--- Tag Update Summary ---");
-    console.log(`Total notes processed: ${totalNotes}`);
-    console.log(`Successfully updated:  ${successCount} notes`);
-    console.log(`Failed updates:       ${errorCount} notes`);
-    console.log("------------------------");
+    } // End of loop
+
+    // 3. Final Summary
+    console.log("\n--- Processing Complete ---");
+    console.log(`Successfully processed: ${successCount} notes.`);
+    console.log(`Failed or skipped:    ${errorCount} notes.`);
+    console.log(`Total attempted:      ${processedCount}`);
+    console.log("--------------------------");
 }
 
-// Run the main function and catch any top-level errors
-updateTags().catch(err => {
-    console.error("\nAn unexpected error occurred during the script execution:", err);
-});
+// --- Run the main function ---
+processNoteTags();
