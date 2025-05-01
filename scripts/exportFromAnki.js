@@ -53,6 +53,7 @@ async function getDeckNoteDetails() {
             const fields = note.fields;
             return {
               noteId: note.noteId,
+              TokenNo: fields.TokenNo?.value || "",
               Question: fields.Question?.value || "",
               OP1: fields.OP1?.value || "",
               OP2: fields.OP2?.value || "",

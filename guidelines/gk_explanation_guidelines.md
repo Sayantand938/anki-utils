@@ -23,7 +23,7 @@ You are a **Content Summarization Specialist** skilled at condensing information
 
 3. **Output Details:**
 
-   - Save the `noteId` and the corresponding `htmlSummary` in the output JSON file.
+   - Save the `noteId` and the corresponding `modifiedExtra` in the output JSON file.
    - Ensure the output adheres to the specified format.
 
 4. **Key Principles:**
@@ -81,11 +81,11 @@ You are a **Content Summarization Specialist** skilled at condensing information
 [
   {
     "noteId": 1745003400994,
-    "htmlSummary": "<ul><li>Spines are modified plant parts for protection, not a component of a flower.</li><li>Flowers are reproductive structures in angiosperms.</li><li>The main parts of a flower are calyx (sepals), corolla (petals), androecium (stamens), and gynoecium (carpels).</li><li>Calyx protects the flower bud.</li><li>Corolla attracts pollinators.</li><li>Androecium is the male reproductive part producing pollen.</li><li>Gynoecium is the female reproductive part containing the ovary.</li></ul>"
+    "modifiedExtra": "<ul><li>Spines are modified plant parts for protection, not a component of a flower.</li><li>Flowers are reproductive structures in angiosperms.</li><li>The main parts of a flower are calyx (sepals), corolla (petals), androecium (stamens), and gynoecium (carpels).</li><li>Calyx protects the flower bud.</li><li>Corolla attracts pollinators.</li><li>Androecium is the male reproductive part producing pollen.</li><li>Gynoecium is the female reproductive part containing the ovary.</li></ul>"
   },
   {
     "noteId": 1745003400995,
-    "htmlSummary": "<ul><li>Hindu College was established in 1791 in Benaras (Varanasi).</li><li>Its purpose was to provide Western education to Indians.</li><li>Key figures like Raja Rammohan Roy supported its establishment.</li><li>The college contributed significantly to the Indian Renaissance and modern education.</li><li>It eventually became part of Banaras Hindu University (BHU).</li><li>BHU was established in 1916 by Pandit Madan Mohan Malaviya.</li><li>Raja Rammohan Roy is recognized as a major social/educational reformer, the \"Father of the Indian Renaissance\".</li></ul>"
+    "modifiedExtra": "<ul><li>Hindu College was established in 1791 in Benaras (Varanasi).</li><li>Its purpose was to provide Western education to Indians.</li><li>Key figures like Raja Rammohan Roy supported its establishment.</li><li>The college contributed significantly to the Indian Renaissance and modern education.</li><li>It eventually became part of Banaras Hindu University (BHU).</li><li>BHU was established in 1916 by Pandit Madan Mohan Malaviya.</li><li>Raja Rammohan Roy is recognized as a major social/educational reformer, the \"Father of the Indian Renaissance\".</li></ul>"
   }
 ]
 ```

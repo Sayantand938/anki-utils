@@ -1,0 +1,377 @@
+[
+  {
+    "noteId": 1745003707392,
+    "TokenNo": "01-176-03-01",
+    "Question": "Choose the most appropriate ANTONYM for the underlined word in the given sentence.<br>The war was followed by a long period of <u>prosperity</u>.",
+    "OP1": "Security",
+    "OP2": "Secure",
+    "OP3": "Affluence",
+    "OP4": "Failure",
+    "Answer": "4",
+    "Extra": "",
+    "tags": [
+      "ENG::Antonym",
+      "Prelims::176"
+    ]
+  },
+  {
+    "noteId": 1745003707393,
+    "TokenNo": "01-176-03-02",
+    "Question": "Select the option that can be used as a one-word substitute for the given phrase.<br>An important person who represents his/her country in a foreign country",
+    "OP1": "Amateur",
+    "OP2": "Ambassador",
+    "OP3": "Altruist",
+    "OP4": "Anonymous",
+    "Answer": "2",
+    "Extra": "",
+    "tags": [
+      "ENG::One-Word-Substitution",
+      "Prelims::176"
+    ]
+  },
+  {
+    "noteId": 1745003707394,
+    "TokenNo": "01-176-03-03",
+    "Question": "Select the option that expresses the given sentence in passive voice.<br>Martha made pancakes yesterday.",
+    "OP1": "Pancakes had been made by Martha yesterday.",
+    "OP2": "Pancakes were being made by Martha yesterday.",
+    "OP3": "Pancakes were made by Martha yesterday.",
+    "OP4": "Pancakes was made by Martha yesterday.",
+    "Answer": "3",
+    "Extra": "",
+    "tags": [
+      "ENG::Voice-Change",
+      "Prelims::176"
+    ]
+  },
+  {
+    "noteId": 1745003707395,
+    "TokenNo": "01-176-03-04",
+    "Question": "In the given question, a statement divided into different segments is given. Rearrange all the segments to form a coherent<br>statement.<br>O: also benefit from knowing<br>P: there are several reasons<br>Q: why even parents would<br>R: more about how and why<br>S: children do the things that they do",
+    "OP1": "RQOPS",
+    "OP2": "OPQSR",
+    "OP3": "PQORS",
+    "OP4": "PQROS",
+    "Answer": "3",
+    "Extra": "",
+    "tags": [
+      "ENG::Parajumble",
+      "Prelims::176"
+    ]
+  },
+  {
+    "noteId": 1745003707396,
+    "TokenNo": "01-176-03-05",
+    "Question": "Select the most appropriate meaning of the given idiom.<br>Radhika stood by Monica's side <u>through thick and thin</u>.",
+    "OP1": "Under easy situations wherein she could ensure Monica's safety and security",
+    "OP2": "In all the happy moments, personally spending most of her time",
+    "OP3": "Under all conditions, no matter how challenging or difficult",
+    "OP4": "In the moments when Monica couldn't complete some simple tasks",
+    "Answer": "3",
+    "Extra": "",
+    "tags": [
+      "ENG::Idioms",
+      "Prelims::176"
+    ]
+  },
+  {
+    "noteId": 1745003707397,
+    "TokenNo": "01-176-03-06",
+    "Question": "Give one word substitution for :<br>A person who is unsure about God’s existence",
+    "OP1": "Ignorant",
+    "OP2": "Atheist",
+    "OP3": "Agnostic",
+    "OP4": "Theist",
+    "Answer": "3",
+    "Extra": "",
+    "tags": [
+      "ENG::One-Word-Substitution",
+      "Prelims::176"
+    ]
+  },
+  {
+    "noteId": 1745003707398,
+    "TokenNo": "01-176-03-07",
+    "Question": "Select the most appropriate synonym of the underlined word in the given sentence.<br>His approach was filled with such <u>perseverance</u> that it was difficult to overlook his merit.",
+    "OP1": "Ignorance",
+    "OP2": "Doggedness",
+    "OP3": "Reluctance",
+    "OP4": "Monotonous",
+    "Answer": "2",
+    "Extra": "",
+    "tags": [
+      "ENG::Synonym",
+      "Prelims::176"
+    ]
+  },
+  {
+    "noteId": 1745003707399,
+    "TokenNo": "01-176-03-08",
+    "Question": "Select the most appropriate option that can substitute the underlined part in the following sentence.<br>Everyone called the reporter <u>a daredevil</u> after he came back safely from the war zone.",
+    "OP1": "a common man",
+    "OP2": "a fearless person",
+    "OP3": "an insignificant person",
+    "OP4": "a hypocrite",
+    "Answer": "2",
+    "Extra": "",
+    "tags": [
+      "ENG::One-Word-Substitution",
+      "Prelims::176"
+    ]
+  },
+  {
+    "noteId": 1745003707400,
+    "TokenNo": "01-176-03-09",
+    "Question": "Parts of the given sentence have been underlined. Identify the part that has an error. Select 'No error' if there is no error.<br>Although the team had <u>trained diligently for months</u>, they <u>had still overwhelmed</u> by the opponent's unexpected tactics.",
+    "OP1": "No error",
+    "OP2": "had still overwhelmed",
+    "OP3": "trained diligently",
+    "OP4": "for months",
+    "Answer": "2",
+    "Extra": "",
+    "tags": [
+      "ENG::Spot-Error",
+      "Prelims::176"
+    ]
+  },
+  {
+    "noteId": 1745003707401,
+    "TokenNo": "01-176-03-10",
+    "Question": "Select the most appropriate ANTONYM of the underlined word.<br>If someone <u>babbles</u>, it means that they talk in a confused or excited way.",
+    "OP1": "Gossips",
+    "OP2": "Quiet",
+    "OP3": "Talkative",
+    "OP4": "Rants",
+    "Answer": "2",
+    "Extra": "",
+    "tags": [
+      "ENG::Antonym",
+      "Prelims::176"
+    ]
+  },
+  {
+    "noteId": 1745003707402,
+    "TokenNo": "01-176-03-11",
+    "Question": "Select the most appropriate ANTONYM of the word in the brackets to fill in the blank.<br>Akash went to ______ his school uniform. [sell]",
+    "OP1": "loan",
+    "OP2": "rent",
+    "OP3": "buy",
+    "OP4": "make",
+    "Answer": "3",
+    "Extra": "",
+    "tags": [
+      "ENG::Fill-Blanks",
+      "Prelims::176"
+    ]
+  },
+  {
+    "noteId": 1745003707403,
+    "TokenNo": "01-176-03-12",
+    "Question": "Select the most appropriate option to substitute the underlined word segment in the given sentence.<br>Carnatic music is usually performed by <u>a small troupe of actors</u>, consisting of a principal performer, a melodic accompaniment, and a rhythm accompaniment.",
+    "OP1": "board of directors",
+    "OP2": "ensemble of musicians",
+    "OP3": "panel of judges",
+    "OP4": "band of singers",
+    "Answer": "2",
+    "Extra": "",
+    "tags": [
+      "ENG::One-Word-Substitution",
+      "Prelims::176"
+    ]
+  },
+  {
+    "noteId": 1745003707404,
+    "TokenNo": "01-176-03-13",
+    "Question": "Select the option that can be used as a one-word substitute for the given group of words.<br>One who speaks less in a forum.",
+    "OP1": "Eccentric",
+    "OP2": "Loquacious",
+    "OP3": "Gabby",
+    "OP4": "Reticent",
+    "Answer": "4",
+    "Extra": "",
+    "tags": [
+      "ENG::One-Word-Substitution",
+      "Prelims::176"
+    ]
+  },
+  {
+    "noteId": 1745003707405,
+    "TokenNo": "01-176-03-14",
+    "Question": "Parts of a sentence are given below in jumbled order. Select the option that gives their correct logical sequence and forms a meaningful sentence.<br>In November, Lakshman fell (P) / with fever (Q) / seriously ill (R) and pneumonia (S).",
+    "OP1": "P, Q, S, R",
+    "OP2": "P, R, Q, S",
+    "OP3": "P, Q, R, S",
+    "OP4": "R, Q, S, P",
+    "Answer": "2",
+    "Extra": "",
+    "tags": [
+      "ENG::Parajumble",
+      "Prelims::176"
+    ]
+  },
+  {
+    "noteId": 1745003707406,
+    "TokenNo": "01-176-03-15",
+    "Question": "In the following sentence, four words are underlined out of which one word is misspelt. Identify the INCORRECTLY spelt word.<br>I felt <u>absolutely</u> (A) fit at the summit. My mind was absolutely <u>clear</u>.(B) I didn’t feel tired, I felt <u>exhilerated</u>. (C)It was a very clear <u>sensation</u>.(D)",
+    "OP1": "C",
+    "OP2": "D",
+    "OP3": "B",
+    "OP4": "A",
+    "Answer": "1",
+    "Extra": "",
+    "tags": [
+      "ENG::Spelling-Check",
+      "Prelims::176"
+    ]
+  },
+  {
+    "noteId": 1745003707407,
+    "TokenNo": "01-176-03-16",
+    "Question": "The following sentence has been divided into five segments. The first segment has no error. Select the option that has the segment with the grammatical error.<br>Due to the pandemic, / the prices of / medicines increased / every day since / last December.",
+    "OP1": "every day since",
+    "OP2": "medicines increased",
+    "OP3": "last December.",
+    "OP4": "the prices of",
+    "Answer": "2",
+    "Extra": "",
+    "tags": [
+      "ENG::Spot-Error",
+      "Prelims::176"
+    ]
+  },
+  {
+    "noteId": 1745003707408,
+    "TokenNo": "01-176-03-17",
+    "Question": "Select the option that expresses the given sentence in active voice.<br>I will be gifted a fancy doll by them the next day.",
+    "OP1": "They gifted me a fancy doll yesterday.",
+    "OP2": "They are gifting me a fancy doll the next day.",
+    "OP3": "They gift me a fancy doll the previous day.",
+    "OP4": "They will gift me a fancy doll tomorrow.",
+    "Answer": "4",
+    "Extra": "",
+    "tags": [
+      "ENG::Voice-Change",
+      "Prelims::176"
+    ]
+  },
+  {
+    "noteId": 1745003707409,
+    "TokenNo": "01-176-03-18",
+    "Question": "Select the most appropriate option that can rectify the incorrectly spelt word in the following sentence.<br>The government has ordered for the maintainance of the roads.",
+    "OP1": "maintenance",
+    "OP2": "maintainence",
+    "OP3": "maintainance",
+    "OP4": "maintenence",
+    "Answer": "1",
+    "Extra": "",
+    "tags": [
+      "ENG::Spelling-Check",
+      "Prelims::176"
+    ]
+  },
+  {
+    "noteId": 1745003707410,
+    "TokenNo": "01-176-03-19",
+    "Question": "Select the most appropriate meaning of the given word.<br>illiterate",
+    "OP1": "A person who cannot speak",
+    "OP2": "One who is well-educated",
+    "OP3": "A person who cannot read and write",
+    "OP4": "Highly rated thing",
+    "Answer": "3",
+    "Extra": "",
+    "tags": [
+      "ENG::One-Word-Substitution",
+      "Prelims::176"
+    ]
+  },
+  {
+    "noteId": 1745003707411,
+    "TokenNo": "01-176-03-20",
+    "Question": "Select the most appropriate ANTONYM of the given word.<br>Affirmative",
+    "OP1": "Sanction",
+    "OP2": "Negative",
+    "OP3": "Acquiescence",
+    "OP4": "Accession",
+    "Answer": "2",
+    "Extra": "",
+    "tags": [
+      "ENG::Antonym",
+      "Prelims::176"
+    ]
+  },
+  {
+    "noteId": 1745003707412,
+    "TokenNo": "01-176-03-21",
+    "Question": "In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.<br>(1) ________ a letter came to inform them that Raka's mother Tara had another breakdown and was in a nursing home in Geneva and that Raka's grandmother Asha, (2) ________ seen another grandchild safely into the world, was flying to Switzerland to be with her, Nanda Kaul (3) ________ her lips, (4) ________ the blue sheets of paper with that distasteful sprawl (5) ________ them, and hid them in her desk.<br><em>Question:</em><br>Select the most appropriate option to fill in blank number 1.",
+    "OP1": "When",
+    "OP2": "Sooner",
+    "OP3": "For",
+    "OP4": "Unless",
+    "Answer": "1",
+    "Extra": "",
+    "tags": [
+      "ENG::Cloze-Test",
+      "Prelims::176"
+    ]
+  },
+  {
+    "noteId": 1745003707413,
+    "TokenNo": "01-176-03-22",
+    "Question": "In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.<br>(1) ________ a letter came to inform them that Raka's mother Tara had another breakdown and was in a nursing home in Geneva and that Raka's grandmother Asha, (2) ________ seen another grandchild safely into the world, was flying to Switzerland to be with her, Nanda Kaul (3) ________ her lips, (4) ________ the blue sheets of paper with that distasteful sprawl (5) ________ them, and hid them in her desk.<br><em>Question:</em><br>Select the most appropriate option to fill in blank number 2.",
+    "OP1": "have",
+    "OP2": "has",
+    "OP3": "had",
+    "OP4": "having",
+    "Answer": "4",
+    "Extra": "",
+    "tags": [
+      "ENG::Cloze-Test",
+      "Prelims::176"
+    ]
+  },
+  {
+    "noteId": 1745003707414,
+    "TokenNo": "01-176-03-23",
+    "Question": "In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.<br>(1) ________ a letter came to inform them that Raka's mother Tara had another breakdown and was in a nursing home in Geneva and that Raka's grandmother Asha, (2) ________ seen another grandchild safely into the world, was flying to Switzerland to be with her, Nanda Kaul (3) ________ her lips, (4) ________ the blue sheets of paper with that distasteful sprawl (5) ________ them, and hid them in her desk.<br><em>Question:</em><br>Select the most appropriate option to fill in blank number 3.",
+    "OP1": "stuck",
+    "OP2": "dirt",
+    "OP3": "dusted",
+    "OP4": "pursed",
+    "Answer": "4",
+    "Extra": "",
+    "tags": [
+      "ENG::Cloze-Test",
+      "Prelims::176"
+    ]
+  },
+  {
+    "noteId": 1745003707415,
+    "TokenNo": "01-176-03-24",
+    "Question": "In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.<br>(1) ________ a letter came to inform them that Raka's mother Tara had another breakdown and was in a nursing home in Geneva and that Raka's grandmother Asha, (2) ________ seen another grandchild safely into the world, was flying to Switzerland to be with her, Nanda Kaul (3) ________ her lips, (4) ________ the blue sheets of paper with that distasteful sprawl (5) ________ them, and hid them in her desk.<br><em>Question:</em><br>Select the most appropriate option to fill in blank number 4.",
+    "OP1": "folded up",
+    "OP2": "cleared up",
+    "OP3": "hid away",
+    "OP4": "tucked away",
+    "Answer": "1",
+    "Extra": "",
+    "tags": [
+      "ENG::Cloze-Test",
+      "Prelims::176"
+    ]
+  },
+  {
+    "noteId": 1745003707416,
+    "TokenNo": "01-176-03-25",
+    "Question": "In the following passage, some words have been deleted. Read the passage carefully and select the most appropriate option to fill in each blank.<br>(1) ________ a letter came to inform them that Raka's mother Tara had another breakdown and was in a nursing home in Geneva and that Raka's grandmother Asha, (2) ________ seen another grandchild safely into the world, was flying to Switzerland to be with her, Nanda Kaul (3) ________ her lips, (4) ________ the blue sheets of paper with that distasteful sprawl (5) ________ them, and hid them in her desk.<br><em>Question:</em><br>Select the most appropriate option to fill in blank number 5.",
+    "OP1": "across",
+    "OP2": "at",
+    "OP3": "in",
+    "OP4": "by",
+    "Answer": "1",
+    "Extra": "",
+    "tags": [
+      "ENG::Cloze-Test",
+      "Prelims::176"
+    ]
+  }
+]
