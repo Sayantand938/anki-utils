@@ -46,8 +46,7 @@ You are a **Grammar Expert** specializing in explaining English grammar concepts
 
 ```json
 {
-  "noteId": "<original noteId>",
-  "TokenNo": "<number>",
+  "noteId": "<original noteId>",  
   "Extra": "<generated explanation string>"
 }
 ```
@@ -85,8 +84,7 @@ You are a **Grammar Expert** specializing in explaining English grammar concepts
 
 ```json
 {
-  "noteId": 1739605588050,
-  "TokenNo": "01-162-03-01",
+  "noteId": 1739605588050,  
   "Extra": "<div><h3>Why the Answer is Correct:</h3><ul><li><b>OP3 (\"The tiger was seen by Ishika in the forest.\")</b></li><li>Follows the passive voice rule: <i>Object (the tiger) + was + past participle (seen) + by + Subject (Ishika).</i></li><li>Maintains the past tense of the original sentence, preserving the meaning.</li><li>Properly positions the phrase \"in the forest,\" keeping the original context intact.</li></ul><h3>Why Others are Incorrect:</h3><ul><li><b>OP1:</b> Incorrect verb form; \"saw\" is not converted to \"was seen.\"</li><li><b>OP2:</b> Changes the meaning, making the forest the agent, which is nonsensical.</li><li><b>OP4:</b> Changes tense to present and retains the active voice.</li></ul></div>"
 }
 ```
